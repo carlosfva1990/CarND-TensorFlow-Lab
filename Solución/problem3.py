@@ -61,6 +61,7 @@ assert labels._dtype == tf.float32, 'labels must be type float32'
 
 # Feed dicts for training, validation, and test session
 train_feed_dict = {features: train_features, labels: train_labels}
+print(train_feed_dict)
 valid_feed_dict = {features: valid_features, labels: valid_labels}
 test_feed_dict = {features: test_features, labels: test_labels}
 
